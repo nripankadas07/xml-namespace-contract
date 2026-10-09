@@ -1,0 +1,23 @@
+[
+  {
+    "args": [
+      "feed.xml",
+      "contract.json"
+    ],
+    "exit": 0
+  },
+  {
+    "args": [
+      "bad-feed.xml",
+      "contract.json"
+    ],
+    "exit": 1
+  },
+  {
+    "args": [
+      "invalid.xml",
+      "contract.json"
+    ],
+    "exit": 2
+  }
+]

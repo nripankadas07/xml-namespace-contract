@@ -1,0 +1,54 @@
+test_default_namespace (test_contract.Tests.test_default_namespace) ... ok
+test_depth (test_contract.Tests.test_depth) ... ok
+test_doctype (test_contract.Tests.test_doctype) ... ok
+test_duplicate_ids (test_contract.Tests.test_duplicate_ids) ... ok
+test_duplicate_path (test_contract.Tests.test_duplicate_path) ... ok
+test_encoding (test_contract.Tests.test_encoding) ... ok
+test_malformed (test_contract.Tests.test_malformed) ... ok
+test_missing_attr (test_contract.Tests.test_missing_attr) ... ok
+test_missing_path (test_contract.Tests.test_missing_path) ... ok
+test_namespaced_attr (test_contract.Tests.test_namespaced_attr) ... ok
+test_policy (test_contract.Tests.test_policy) ... ok
+test_prefix_invariance (test_contract.Tests.test_prefix_invariance) ... ok
+test_uri_drift (test_contract.Tests.test_uri_drift) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.002s
+
+OK
+{
+  "good": {
+    "elements": 2,
+    "findings": []
+  },
+  "violation": {
+    "elements": 3,
+    "findings": [
+      {
+        "code": "duplicate_attribute",
+        "path": [
+          "{urn:feed}catalog",
+          "{urn:feed}item"
+        ],
+        "occurrence": 2,
+        "attribute": "id"
+      }
+    ]
+  }
+}
+Processing /workspace/scratch/5d784ffbbfd3/launch-oct9/xml-namespace-contract
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: xml-namespace-contract
+  Building wheel for xml-namespace-contract (pyproject.toml): started
+  Building wheel for xml-namespace-contract (pyproject.toml): finished with status 'done'
+  Created wheel for xml-namespace-contract: filename=xml_namespace_contract-0.1.0-py3-none-any.whl size=5689 sha256=659e5153ae605bbe2293aa78da5f30363b4c66cc27f959dd4eaa70ba8f4be74a
+  Stored in directory: /root/.cache/pip/wheels/2d/ea/fc/012f18380a7c141dd89cdfaac0fdbc32775a6a246bbaec7c01
+Successfully built xml-namespace-contract
+Installing collected packages: xml-namespace-contract
+Successfully installed xml-namespace-contract-0.1.0
+PASS: fresh package installation and installed CLI good/findings/invalid cases outside source

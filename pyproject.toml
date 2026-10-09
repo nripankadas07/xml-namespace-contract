@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "xml-namespace-contract"
+version = "0.1.0"
+description = "Prefix-invariant XML namespace, path cardinality and attribute-identity contracts."
+requires-python = ">=3.10"
+readme = "README.md"
+license = "MIT"
+authors = [{name = "Nripanka Das"}]
+dependencies = []
+[project.scripts]
+xml-namespace-contract = "xml_namespace_contract:main"
+[project.urls]
+Repository = "https://github.com/nripankadas07/xml-namespace-contract"
+Issues = "https://github.com/nripankadas07/xml-namespace-contract/issues"
+[tool.setuptools]
+py-modules = ["xml_namespace_contract"]
